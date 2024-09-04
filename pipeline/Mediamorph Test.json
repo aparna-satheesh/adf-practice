@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "SFTP to ADLS",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -15,8 +15,25 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"source": {
+						"type": "BinarySource",
+						"storeSettings": {
+							"type": "SftpReadSettings",
+							"recursive": true,
+							"disableChunking": false
+						},
+						"formatSettings": {
+							"type": "BinaryReadSettings"
+						}
+					},
 					"enableStaging": false
-				}
+				},
+				"inputs": [
+					{
+						"referenceName": "Binary1",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []
