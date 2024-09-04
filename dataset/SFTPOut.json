@@ -1,0 +1,17 @@
+{
+	"name": "SFTPOut",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureblobADF",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "contlearnadf"
+			}
+		}
+	}
+}
