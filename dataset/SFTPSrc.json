@@ -1,5 +1,5 @@
 {
-	"name": "Binary1",
+	"name": "SFTPSrc",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "WM_sftp",

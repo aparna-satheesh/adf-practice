@@ -1,0 +1,23 @@
+{
+	"name": "SFTPSink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureblobADF",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "SFTPOut",
+				"container": "contlearnadf"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
